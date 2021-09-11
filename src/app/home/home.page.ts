@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private iab: InAppBrowser) {
+    this.openBlank();
+  }
+
+  openBlank() {
+    this.iab.create('https://www.teezily.com/stores/certified', '_blank');
+  }
+  
 
 }

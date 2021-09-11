@@ -1,5 +1,7 @@
 {
   "name": "ocp-store",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
